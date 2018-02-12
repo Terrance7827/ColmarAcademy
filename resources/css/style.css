@@ -1,0 +1,203 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+h2{
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+h4{
+  font-size: 1.5 rem;
+  color: gray;
+}
+.container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li{
+  display: inline;
+  margin: 0 .5rem;
+}
+
+/*Header and navigations styles */
+header .container{
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+header span em{
+  color: darkgray;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.logo img{
+  height: 2rem;
+  width: auto;
+}
+nav ul.menu-mobile{
+  display: none;
+}
+
+/*Banner styles */
+.main-banner .container{
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: lightgray;
+}
+.main-banner img{
+  width: 60%;
+  height: auto;
+}
+.main-banner .enroll{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+}
+.enroll h2{
+  margin: 1rem 0;
+  color: gray;
+}
+.enroll .btn{
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+/* Information and highlight section */
+.college-info .container{
+  align-items: flex-start;
+}
+
+.container .highlight, .container .video{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+.information a{
+  font-size: 0.9rem;
+  color: #B0E0E6;
+}
+.highlight img {
+  width: 100%;
+  height: auto;
+}
+.highlight .content p{
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+.highlight .cite{
+  color: black;
+  font-size: 0.75rem;
+}
+.container .information, .container .side{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem 0;
+}
+.information .info, .side .thesis-box{
+  display: flex;
+  flex-direction: row;
+}
+.info .img-container, .thesis-box .img-container{
+  padding: 1rem 1rem;
+  width: 35%;
+}
+.info img, .thesis-box img{
+  width: 100%;
+  height: auto;
+}
+.info .content, .thesis-box .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+.info .content span, .thesis-box .content span{
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Courses section */
+.learning{
+  background-color: lightgray;
+}
+
+.learning .header, .thesis .header{
+  margin: 2rem 0;
+}
+
+.learning .container{
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4.5rem;
+}
+.learning .courses{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.courses .course{
+  width: 30%;
+  margin: 1rem 1rem;
+  background-color: #FFFFFF;
+}
+.course .img-container{
+  width: 100%;
+}
+.course .img-container img{
+  width: 100%;
+  height: auto;
+}
+.course .course-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 1rem;
+}
+.course-desc span{
+  margin: 0.5rem 0;
+}
+
+/* Thesis section */
+.thesis .header{
+  text-align: center;
+}
+.thesis .container{
+  padding-bottom: 2rem;
+}
+.video .content{
+  margin-top: 1.5rem;
+}
+.thesis .content p{
+  margin-top: 0.5rem;
+}
+/* footer */
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid lightgray;
+}
