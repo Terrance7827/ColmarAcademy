@@ -4,18 +4,20 @@ html{
 body{
   font-family: 'Montserrat', sans-serif;
 }
-h1{
-  font-size: 3rem;
-  font-weight: bold;
-}
-h2{
-  font-size: 1.75rem;
-  font-weight: 500;
-}
-h4{
-  font-size: 1.5 rem;
-  color: gray;
-}
+
+  h1{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 1.5 rem;
+    color: gray;
+  }
+
 .container{
   max-width: 100%;
   display: flex;
@@ -27,6 +29,19 @@ nav ul{
 nav ul li{
   display: inline;
   margin: 0 .5rem;
+}
+
+@media only screen and (max-width: 600px){
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h4{
+    color: black;
+    font-weight: bold;
+  }
 }
 
 /*Header and navigations styles */
@@ -49,8 +64,22 @@ header span em{
   height: 2rem;
   width: auto;
 }
+
 nav ul.menu-mobile{
-  display: none;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+  header .menu, header .logo{
+    display: none;
+  }
+  nav ul.menu-mobile{
+    display: block;
+    width: 100%;
+  }
+  header .container{
+    justify-content: center;
+  }
 }
 
 /*Banner styles */
@@ -81,6 +110,20 @@ nav ul.menu-mobile{
   color: white;
 }
 
+@media only screen and (max-width: 760px){
+  .main-banner .container{
+    flex-direction: column;
+  }
+  .main-banner img{
+    width: 100%;
+    height: auto;
+  }
+  .main-banner .enroll{
+    margin: 2rem 1rem;
+    justify-content: center;
+  }
+}
+
 /* Information and highlight section */
 .college-info .container{
   align-items: flex-start;
@@ -99,6 +142,9 @@ nav ul.menu-mobile{
 .highlight img {
   width: 100%;
   height: auto;
+}
+.highlight .content{
+  padding: 2rem 0;
 }
 .highlight .content p{
   margin: 2rem 0;
@@ -137,6 +183,32 @@ nav ul.menu-mobile{
   font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 600px){
+ .container .highlight{
+    display: none;
+  }
+  .container .information{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .information .info{
+    flex-direction: column;
+  }
+  .info .img-container{
+    width: 100%;
+    height: auto;
+  }
+  .info .content{
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .info a{
+    color: blue;
+  }
+}
+
 /* Courses section */
 .learning{
   background-color: lightgray;
@@ -159,7 +231,7 @@ nav ul.menu-mobile{
 }
 .courses .course{
   width: 30%;
-  margin: 1rem 1rem;
+  margin: 1rem 0rem;
   background-color: #FFFFFF;
 }
 .course .img-container{
@@ -175,8 +247,37 @@ nav ul.menu-mobile{
   align-items: flex-start;
   padding: 1rem 1rem;
 }
+.course-desc .title{
+  font-weight: bold;
+}
+.course-desc .course-txt{
+  color: gray;
+}
 .course-desc span{
   margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 600px){
+  .learning{
+    background-color: white;
+    border-top: 0.75px solid lightgray;
+    border-bottom: 0.75px solid lightgray;
+  }
+  .learning .header{
+    margin-bottom: 1rem;
+  }
+  .learning .courses{
+    flex-direction: column;
+    align-items: center;
+  }
+  .learning .img-container, .learning .course-txt{
+    display: none;
+  }
+  .courses .course{
+    width: 100%;
+    margin: 0.5rem 0;
+    background-color: lightgray;
+  }
 }
 
 /* Thesis section */
@@ -200,4 +301,30 @@ footer{
   justify-content: space-between;
   padding: 1rem 1.5rem;
   border-top: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 600px){
+  .thesis .side{
+    display: none;
+  }
+  .thesis .header{
+    margin-bottom: 1rem;
+  }
+  .thesis .container{
+    margin-bottom: 1.5rem;
+  }
+  .thesis .video{
+    width: 100%;
+    padding: 0 0;
+  }
+  .video .content{
+    display: none;
+  }
+  footer{
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  footer nav{
+    display: none;
+  }
 }
